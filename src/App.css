@@ -104,6 +104,100 @@
   font-size: 0.9rem;
 }
 
+.catalog-controls {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 0 24px;
+}
+
+.search-box-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px 170px 10px 14px;
+  font: inherit;
+  font-size: 0.95rem;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--ink);
+}
+
+.search-input:focus {
+  outline: 2px solid var(--brass);
+  border-color: var(--brass);
+}
+
+.sort-switch-btn {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 5px 10px;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.8rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.sort-switch-btn:hover {
+  background: #fff;
+  border-color: var(--ink);
+}
+
+.sort-switch-btn.active {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.type-filter-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  background: #fff;
+  border: 1px solid var(--line);
+  color: var(--steel);
+  font: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s, color 0.15s;
+}
+
+.filter-btn:hover {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+.filter-btn.active {
+  background: var(--ink);
+  color: #fff;
+  border-color: var(--ink);
+}
+
+.no-results {
+  padding: 32px 0;
+  color: var(--steel);
+  font-style: italic;
+  text-align: center;
+}
+
 .stock {
   list-style: none;
   margin: 0;
@@ -136,7 +230,8 @@
 
 .card-img {
   width: 100%;
-  height: auto;
+  height: 170px;
+  object-fit: contain;
   margin-bottom: 10px;
   border-bottom: 1px solid var(--line);
 }

@@ -32,3 +32,5 @@ conventions/
 *.njsproj
 *.sln
 *.sw?
+
+explanation.md
