@@ -53,6 +53,34 @@ const GUNS = [
     description:
       'The other pump gun. Twin action bars, a simple safety on the tang, and a price that leaves money for ammunition.',
   },
+  {
+    name: 'Beretta 92FS',
+    type: 'Pistol',
+    caliber: '9mm',
+    price: 650,
+    image: '/guns/pistol.png',
+    description:
+      'Pistol goess brrrrrrrrrrrrrr.',
+  },
+  {
+    name: 'Barrett M82',
+    type: 'Rifle',
+    caliber: '.50 BMG',
+    price: 8999,
+    image: '/guns/rifle.jpg',
+    description:
+      'Ngecheat Jamsut headshot mulu.',
+  },
+  {
+    name: 'Benelli M4',
+    type: 'Shotgun',
+    caliber: '12 Gauge',
+    price: 1999,
+    image: '/guns/shotgun.webp',
+    description:
+      'Booommm krakattkatkatk ilang ndas kau.',
+  },
 ]
 
 export default GUNS
+
