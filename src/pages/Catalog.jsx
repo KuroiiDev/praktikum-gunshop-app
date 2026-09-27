@@ -5,11 +5,11 @@ import GUNS from '../data/guns.js'
 const SORT_MODES = ['default', 'name-asc', 'name-desc', 'price-asc', 'price-desc']
 
 const SORT_LABELS = {
-  default: 'Sort: Default ⇅',
-  'name-asc': 'Sort: Name (A-Z) ↑',
-  'name-desc': 'Sort: Name (Z-A) ↓',
-  'price-asc': 'Sort: Price ($ Low) ↑',
-  'price-desc': 'Sort: Price ($ High) ↓',
+  default: 'Sort: Default',
+  'name-asc': 'Sort: Name (A-Z)',
+  'name-desc': 'Sort: Name (Z-A)',
+  'price-asc': 'Sort: Price ($ Low)',
+  'price-desc': 'Sort: Price ($ High)',
 }
 
 function Catalog() {
@@ -104,7 +104,7 @@ function Catalog() {
             ))}
           </ul>
         ) : (
-          <p className="no-results">Gak ada item nya jir..</p>
+          <p className="no-results">no guns match</p>
         )}
       </section>
     </>
